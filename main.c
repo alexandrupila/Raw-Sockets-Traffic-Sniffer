@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <pcap.h>
 #include <stdlib.h>
 #include <string.h>
 #include <netinet/ip_icmp.h>
@@ -8,6 +9,13 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <net/ethernet.h>
+
+typedef struct 
+{
+    uint32_t address;
+    int count;
+
+}ip_replies;
 
 void processPacket(unsigned char* buffer, int size,FILE* logfile)
 {   
@@ -39,6 +47,27 @@ void processPacket(unsigned char* buffer, int size,FILE* logfile)
     }
 }
 
+void printHTTP(unsigned char* buffer, int size,FILE* logfile)
+{
+    unsigned short iphdrlen;
+    struct iphdr* iph=(struct iphdr*) buffer;
+    iphdrlen=iph->ihl*4;
+
+    struct tcphdr* tcph=(struct tcphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
+    unsigned short tcphdrlen;
+    tcphdrlen=tcph->doff*4;
+
+    int payload_offset=buffer+sizeof(struct ethhdr)+iphdrlen+tcphdrlen;
+
+    unsigned char* http_payload=buffer+payload_offset;
+    int http_payload_size=size-payload_offset;
+
+    fprintf(logfile,"HTTP RECEIVED\n");
+
+    fprintf(logfile,"%s",http_payload);
+
+}
+
 void printTCP(unsigned char* buffer, int size,FILE* logfile)
 {       
 
@@ -47,6 +76,13 @@ void printTCP(unsigned char* buffer, int size,FILE* logfile)
     iphdrlen=iph->ihl*4;
 
     struct tcphdr* tcph=(struct tcphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
+
+    if(tcph->dest==80 || tcph->source==80) //aici trebuie sa modific, nu prea am dat de http pe portul ala va fi nevoie sa verific daca e GET/POST si altele in buffer
+    {   
+        printf("TCP CONTAINS HTTP\n");
+        printHTTP(buffer,size,logfile);
+        return;
+    }
 
     fprintf(logfile,"TCP RECEIVED\n");
 
@@ -85,7 +121,7 @@ void printICMP(unsigned char* buffer, int size, FILE* logfile)
     struct iphdr* iph=(struct iphdr*) buffer;
     iphdrlen=iph->ihl*4;
 
-    struct icmphdr* icmph=(struct icmphdr*) buffer;
+    struct icmphdr* icmph=(struct icmphdr*) buffer+iphdrlen+sizeof(struct ethhdr);
     
     fprintf(logfile,"ICMP RECEIVED\n");
 
@@ -100,7 +136,54 @@ void printICMP(unsigned char* buffer, int size, FILE* logfile)
 
 }
 
-int main()
+void monitorICMP(unsigned char* buffer, int size, FILE* logfile)
+{   
+    static ip_replies repls[50];
+    static int nr_of_ips=0;
+
+    struct ethhdr* eth=(struct ethhdr*)(buffer);
+    if(htons(eth->h_proto)!=0x800) return;
+
+    struct iphdr *iph=(struct iphdr*) (buffer+sizeof(struct ethhdr));
+    unsigned short iphdrlen=iph->ihl*4;
+
+    if(iph->protocol!=1) return;
+
+    struct icmphdr* icmph=(struct icmphdr*) buffer+iphdrlen+sizeof(struct ethhdr);
+
+    if(icmph->type==0)
+    {   
+        int exists=0;
+        for(int i=0;i<nr_of_ips;i++)
+        {
+            if(repls[i].address==iph->saddr) 
+            {
+                exists=1;
+                repls[i].count++;
+                break;
+            }
+        }
+        if(!exists)
+        {
+            repls[nr_of_ips].address=iph->saddr;
+            repls[nr_of_ips++].count=0;
+        }
+
+    }
+
+    for(int i=0;i<nr_of_ips;i++)
+    {
+        if(repls[i].count>4)
+        {   
+            struct in_addr ip_addr;
+            ip_addr.s_addr=repls[i].address;
+            printf("Suspicious ICMP Traffic from %s\n",inet_ntoa(ip_addr));
+        }
+    }
+
+}
+
+int main(int argc, char* argv[])
 {
     int saddr_size, data_size;
     struct sockaddr saddr;
@@ -110,7 +193,11 @@ int main()
 
     FILE * logfile=fopen("log.txt","w");
 
-    printf("Traffic sniffer starting\n");
+    if(strcmp(argv[1],"--monitor")==0)
+    {
+        printf("Monitoring ICMP Traffic\n");
+    }
+    else printf("Traffic sniffer starting\n");
 
     int sock_raw =socket(AF_PACKET,SOCK_RAW,htons(ETH_P_ALL));
 
@@ -129,7 +216,8 @@ int main()
             printf("Error when receiving packets");
             return 1;
         }
-        processPacket(buffer,data_size,logfile);
+        if(strcmp(argv[1],"--monitor")==0) monitorICMP(buffer,data_size,logfile);
+        else processPacket(buffer,data_size,logfile);
         packet_nr++;
         if(packet_nr==5000) exit(0);
 
