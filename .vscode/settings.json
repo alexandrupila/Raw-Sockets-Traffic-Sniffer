@@ -4,6 +4,7 @@
         "tcp.h": "c",
         "inet.h": "c",
         "udp.h": "c",
-        "ip_icmp.h": "c"
+        "ip_icmp.h": "c",
+        "socket.h": "c"
     }
 }

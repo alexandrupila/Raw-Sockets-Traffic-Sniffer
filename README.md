@@ -18,3 +18,10 @@ a determina protocolul
 
 Am adaugat niste monitorizare pentru icmp, detecteaza daca vin prea multe pachete de 
 la o anumita adresa ip si alerteaza in cazul acesta. 
+
+21.06
+
+Am adaugat abilitatea de a filtra dupa ip si port si incerc sa fac astfel incat sa imi
+afiseze DNS-urile capturate. Am cautat niste librarii pe net ca sa ma ajute cu structurile acelea
+
+De aici am luat structura din utils.h: https://github.com/seladb/PcapPlusPlus

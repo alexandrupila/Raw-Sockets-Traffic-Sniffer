@@ -1,0 +1,1962 @@
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.194
+Source port:69 Destination port:10240 Seq. number:4223307 Ack seq:2475296320
+FLAGS: 
+Window: 3842
+Checksum: 64142
+Urgent Pointer: 49865
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.194
+Source port:69 Destination port:20224 Seq. number:4249765 Ack seq:87033408
+FLAGS: 
+Window: 3842
+Checksum: 64142
+Urgent Pointer: 49865
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.194
+Source port:69 Destination port:16384 Seq. number:4250021 Ack seq:321914432
+FLAGS: 
+Window: 3842
+Checksum: 64142
+Urgent Pointer: 49865
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.194
+Source port:69 Destination port:10240 Seq. number:4250277 Ack seq:707790400
+FLAGS: 
+Window: 3842
+Checksum: 64142
+Urgent Pointer: 49865
+TCP RECEIVED
+Source IP Address: 142.250.201.194 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:63577 Ack seq:213648960
+FLAGS: URG ACK PSH SYN 
+Window: 49865
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 142.250.201.194 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:63833 Ack seq:196871744
+FLAGS: URG ACK PSH SYN 
+Window: 49865
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 142.250.201.194 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:64089 Ack seq:180094528
+FLAGS: URG ACK PSH SYN 
+Window: 49865
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 142.250.201.194 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:64345 Ack seq:163317312
+FLAGS: URG ACK PSH SYN 
+Window: 49865
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.194
+Source port:69 Destination port:10240 Seq. number:4194304 Ack seq:81135168
+FLAGS: 
+Window: 3842
+Checksum: 64142
+Urgent Pointer: 49865
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 20.189.173.1
+Source port:69 Destination port:40448 Seq. number:4213492 Ack seq:1115162176
+FLAGS: 
+Window: 3842
+Checksum: 48404
+Urgent Pointer: 429
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 20.189.173.1
+Source port:16821 Destination port:21252 Seq. number:2502989834 Ack seq:3237222480
+FLAGS: URG ACK RST FIN 
+Window: 0
+Checksum: 791
+Urgent Pointer: 2051
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:38922 Destination port:38192 Seq. number:1392787893 Ack seq:4294905936
+FLAGS: URG 
+Window: 0
+Checksum: 0
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:38922 Destination port:38192 Seq. number:118112693 Ack seq:4294905936
+FLAGS: URG PSH RST 
+Window: 0
+Checksum: 0
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:38922 Destination port:38192 Seq. number:2701935029 Ack seq:4294905936
+FLAGS: ACK SYN 
+Window: 0
+Checksum: 0
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:38922 Destination port:38192 Seq. number:2701935029 Ack seq:4294907984
+FLAGS: ACK RST SYN FIN 
+Window: 0
+Checksum: 791
+Urgent Pointer: 3
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 20.189.173.1
+Source port:16821 Destination port:41228 Seq. number:4147157002 Ack seq:3237220432
+FLAGS: URG RST SYN FIN 
+Window: 0
+Checksum: 791
+Urgent Pointer: 3
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 104.76.220.193
+Source port:6449 Destination port:54377 Seq. number:2058721810 Ack seq:3237548112
+FLAGS: URG ACK RST SYN FIN 
+Window: 0
+Checksum: 791
+Urgent Pointer: 3
+TCP RECEIVED
+Source IP Address: 104.76.220.193 Destination IP Address: 10.0.2.15
+Source port:39442 Destination port:31413 Seq. number:3580434737 Ack seq:4294905936
+FLAGS: URG RST 
+Window: 0
+Checksum: 0
+Urgent Pointer: 0
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:17152 Destination port:35582 Length:19910 Checksum:8193
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:17152 Destination port:35582 Length:19910 Checksum:8193
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:17152 Destination port:35582 Length:19368 Checksum:8193
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:17152 Destination port:35582 Length:19368 Checksum:8193
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:8887 Destination port:64319 Seq. number:3121420817 Ack seq:888674384
+FLAGS: URG ACK RST SYN 
+Window: 0
+Checksum: 791
+Urgent Pointer: 3
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:1216 Destination port:47873 Seq. number:2504008375 Ack seq:3121420817
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 12290
+Urgent Pointer: 0
+UDP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 192.168.20.74
+Source port:62362 Destination port:13568 Length:14336 Checksum:19169
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:1216 Seq. number:3121420817 Ack seq:2504008375
+FLAGS: ACK 
+Window: 65535
+Checksum: 34520
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:1216 Seq. number:3121420817 Ack seq:2822972087
+FLAGS: ACK 
+Window: 65535
+Checksum: 29653
+Urgent Pointer: 0
+UDP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 192.168.20.74
+Source port:1940 Destination port:13568 Length:14336 Checksum:19169
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.107.243.93
+Source port:18098 Destination port:47873 Seq. number:3048398709 Ack seq:2784041745
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 3618
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.107.243.93 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:18098 Seq. number:2784041745 Ack seq:3518160757
+FLAGS: ACK 
+Window: 65535
+Checksum: 35246
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.195
+Source port:18049 Destination port:47873 Seq. number:1970782042 Ack seq:3039770130
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 3685
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.195
+Source port:19628 Destination port:47873 Seq. number:1140670600 Ack seq:2373429010
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 3685
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.163
+Source port:50361 Destination port:47873 Seq. number:983998131 Ack seq:3040163090
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 61291
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 216.239.32.36
+Source port:11423 Destination port:47873 Seq. number:1995082276 Ack seq:4180872210
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 25605
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.195 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:18049 Seq. number:3039770130 Ack seq:2625093466
+FLAGS: ACK 
+Window: 65535
+Checksum: 49075
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.195 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:19628 Seq. number:2373429010 Ack seq:1794982024
+FLAGS: ACK 
+Window: 65535
+Checksum: 8333
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.163 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:50361 Seq. number:3040163090 Ack seq:1638309555
+FLAGS: ACK 
+Window: 65535
+Checksum: 48358
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 216.239.32.36 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:11423 Seq. number:4180872210 Ack seq:2649393700
+FLAGS: ACK 
+Window: 65535
+Checksum: 40372
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.180.238
+Source port:53970 Destination port:47873 Seq. number:3346946457 Ack seq:2650850065
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 14672
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.161
+Source port:50315 Destination port:47873 Seq. number:484912888 Ack seq:2874748690
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 60779
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.180.238 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:53970 Seq. number:2650850065 Ack seq:4001257881
+FLAGS: ACK 
+Window: 65535
+Checksum: 42592
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.161 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:50315 Seq. number:2874748690 Ack seq:1139224312
+FLAGS: ACK 
+Window: 65535
+Checksum: 23659
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.217.20.3
+Source port:53978 Destination port:47873 Seq. number:3982629839 Ack seq:2561090066
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 11469
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.217.20.3 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:53978 Seq. number:2561090066 Ack seq:342039503
+FLAGS: ACK 
+Window: 65535
+Checksum: 28954
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:1216 Destination port:47873 Seq. number:2822972087 Ack seq:3121420817
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 19199
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:1216 Seq. number:3121420817 Ack seq:3594724023
+FLAGS: ACK 
+Window: 65535
+Checksum: 17877
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.217.19.98
+Source port:41698 Destination port:47873 Seq. number:1507324555 Ack seq:2373855506
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 35788
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.217.19.98 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:41698 Seq. number:2373855506 Ack seq:2161635979
+FLAGS: ACK 
+Window: 65535
+Checksum: 779
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.194
+Source port:56474 Destination port:47873 Seq. number:3476611339 Ack seq:1198499346
+FLAGS: ACK PSH 
+Window: 42745
+Checksum: 3429
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.194 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:56474 Seq. number:1198499346 Ack seq:4130922763
+FLAGS: ACK 
+Window: 65535
+Checksum: 44263
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 108.177.119.84
+Source port:49321 Destination port:47873 Seq. number:2680965283 Ack seq:3095603218
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 22000
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 108.177.119.84 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:49321 Seq. number:3095603218 Ack seq:3335276707
+FLAGS: ACK 
+Window: 65535
+Checksum: 21774
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.64.155.249
+Source port:46786 Destination port:47873 Seq. number:2948946230 Ack seq:1531182097
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 35412
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.130
+Source port:1764 Destination port:47873 Seq. number:1614771478 Ack seq:2364937490
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 52843
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 104.18.32.115
+Source port:49885 Destination port:47873 Seq. number:1567041295 Ack seq:2721439505
+FLAGS: ACK PSH 
+Window: 35577
+Checksum: 54676
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.39.14
+Source port:59538 Destination port:47873 Seq. number:863249365 Ack seq:2619150354
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 22978
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.39.4
+Source port:61130 Destination port:47873 Seq. number:575555307 Ack seq:4097417490
+FLAGS: ACK PSH 
+Window: 65535
+Checksum: 20418
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.64.155.249 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:46786 Seq. number:1531182097 Ack seq:3603257654
+FLAGS: ACK 
+Window: 65535
+Checksum: 37701
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.130 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:1764 Seq. number:2364937490 Ack seq:2269082902
+FLAGS: ACK 
+Window: 65535
+Checksum: 59391
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 104.18.32.115 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:49885 Seq. number:2721439505 Ack seq:2221352719
+FLAGS: ACK 
+Window: 65535
+Checksum: 38525
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.39.14 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:59538 Seq. number:2619150354 Ack seq:1517560789
+FLAGS: ACK 
+Window: 65535
+Checksum: 61151
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.39.4 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:61130 Seq. number:4097417490 Ack seq:1229866731
+FLAGS: ACK 
+Window: 65535
+Checksum: 63386
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.180.238
+Source port:53970 Destination port:47873 Seq. number:4001257881 Ack seq:2650850065
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 10832
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.180.238
+Source port:53970 Destination port:47873 Seq. number:109009305 Ack seq:2650850065
+FLAGS: ACK FIN 
+Window: 13560
+Checksum: 4688
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 108.177.119.84
+Source port:49321 Destination port:47873 Seq. number:3335276707 Ack seq:3095603218
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 18160
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 108.177.119.84
+Source port:49321 Destination port:47873 Seq. number:3737929891 Ack seq:3095603218
+FLAGS: ACK FIN 
+Window: 15605
+Checksum: 12016
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.180.238 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:53970 Seq. number:2650850065 Ack seq:109009305
+FLAGS: ACK 
+Window: 65535
+Checksum: 36448
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.180.238 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:53970 Seq. number:2650850065 Ack seq:125786521
+FLAGS: ACK 
+Window: 65535
+Checksum: 36192
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.194
+Source port:56474 Destination port:47873 Seq. number:4130922763 Ack seq:1198499346
+FLAGS: ACK PSH 
+Window: 42745
+Checksum: 65124
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.194
+Source port:56474 Destination port:47873 Seq. number:238674187 Ack seq:1198499346
+FLAGS: ACK FIN 
+Window: 42745
+Checksum: 58980
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 108.177.119.84 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:49321 Seq. number:3095603218 Ack seq:3737929891
+FLAGS: ACK 
+Window: 65535
+Checksum: 15630
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 108.177.119.84 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:49321 Seq. number:3095603218 Ack seq:3754707107
+FLAGS: ACK 
+Window: 65535
+Checksum: 15374
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.163
+Source port:50361 Destination port:47873 Seq. number:1638309555 Ack seq:3040163090
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 57451
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.163
+Source port:50361 Destination port:47873 Seq. number:2040962739 Ack seq:3040163090
+FLAGS: ACK FIN 
+Window: 13560
+Checksum: 51307
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.194 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:56474 Seq. number:1198499346 Ack seq:238674187
+FLAGS: ACK 
+Window: 65535
+Checksum: 38119
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.194 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:56474 Seq. number:1198499346 Ack seq:255451403
+FLAGS: ACK 
+Window: 65535
+Checksum: 37863
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.163 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:50361 Seq. number:3040163090 Ack seq:2040962739
+FLAGS: ACK 
+Window: 65535
+Checksum: 42214
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.163 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:50361 Seq. number:3040163090 Ack seq:2057739955
+FLAGS: ACK 
+Window: 65535
+Checksum: 41958
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 104.18.32.115
+Source port:49885 Destination port:47873 Seq. number:2221352719 Ack seq:2721439505
+FLAGS: ACK PSH 
+Window: 35577
+Checksum: 50836
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 104.18.32.115
+Source port:49885 Destination port:47873 Seq. number:2624005903 Ack seq:2721439505
+FLAGS: ACK FIN 
+Window: 35577
+Checksum: 44692
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.195
+Source port:18049 Destination port:47873 Seq. number:2625093466 Ack seq:3039770130
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 65380
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.195
+Source port:18049 Destination port:47873 Seq. number:3027746650 Ack seq:3039770130
+FLAGS: ACK FIN 
+Window: 13560
+Checksum: 59236
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 104.18.32.115 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:49885 Seq. number:2721439505 Ack seq:2624005903
+FLAGS: ACK 
+Window: 65535
+Checksum: 32381
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 104.18.32.115 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:49885 Seq. number:2721439505 Ack seq:2640783119
+FLAGS: ACK 
+Window: 65535
+Checksum: 32125
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.161
+Source port:50315 Destination port:47873 Seq. number:1139224312 Ack seq:2874748690
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 56939
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.161
+Source port:50315 Destination port:47873 Seq. number:1541877496 Ack seq:2874748690
+FLAGS: ACK FIN 
+Window: 15605
+Checksum: 50795
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.195 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:18049 Seq. number:3039770130 Ack seq:3027746650
+FLAGS: ACK 
+Window: 65535
+Checksum: 42931
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.217.19.98
+Source port:41698 Destination port:47873 Seq. number:2161635979 Ack seq:2373855506
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 31948
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.217.19.98
+Source port:41698 Destination port:47873 Seq. number:2564289163 Ack seq:2373855506
+FLAGS: ACK FIN 
+Window: 13560
+Checksum: 25804
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.195 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:18049 Seq. number:3039770130 Ack seq:3044523866
+FLAGS: ACK 
+Window: 65535
+Checksum: 42675
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.161 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:50315 Seq. number:2874748690 Ack seq:1541877496
+FLAGS: ACK 
+Window: 65535
+Checksum: 17515
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.161 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:50315 Seq. number:2874748690 Ack seq:1558654712
+FLAGS: ACK 
+Window: 65535
+Checksum: 17259
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 216.239.32.36
+Source port:11423 Destination port:47873 Seq. number:2649393700 Ack seq:4180872210
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 21765
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 216.239.32.36
+Source port:11423 Destination port:47873 Seq. number:3052046884 Ack seq:4180872210
+FLAGS: ACK FIN 
+Window: 15605
+Checksum: 15621
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.217.19.98 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:41698 Seq. number:2373855506 Ack seq:2564289163
+FLAGS: ACK 
+Window: 65535
+Checksum: 60170
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.217.19.98 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:41698 Seq. number:2373855506 Ack seq:2581066379
+FLAGS: ACK 
+Window: 65535
+Checksum: 59914
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 216.239.32.36 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:11423 Seq. number:4180872210 Ack seq:3052046884
+FLAGS: ACK 
+Window: 65535
+Checksum: 34228
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 216.239.32.36 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:11423 Seq. number:4180872210 Ack seq:3068824100
+FLAGS: ACK 
+Window: 65535
+Checksum: 33972
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:1216 Destination port:47873 Seq. number:3594724023 Ack seq:3121420817
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 15359
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:1216 Destination port:47873 Seq. number:4114817719 Ack seq:3121420817
+FLAGS: ACK FIN 
+Window: 13560
+Checksum: 7423
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.130
+Source port:1764 Destination port:47873 Seq. number:2269082902 Ack seq:2364937490
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 49003
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.130
+Source port:1764 Destination port:47873 Seq. number:2671736086 Ack seq:2364937490
+FLAGS: ACK FIN 
+Window: 15605
+Checksum: 42859
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:1216 Seq. number:3121420817 Ack seq:4114817719
+FLAGS: ACK 
+Window: 65535
+Checksum: 9941
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:1216 Seq. number:3121420817 Ack seq:4131594935
+FLAGS: ACK 
+Window: 65535
+Checksum: 9685
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.39.14
+Source port:59538 Destination port:47873 Seq. number:1517560789 Ack seq:2619150354
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 19138
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.39.14
+Source port:59538 Destination port:47873 Seq. number:1920213973 Ack seq:2619150354
+FLAGS: ACK FIN 
+Window: 15605
+Checksum: 12994
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.130 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:1764 Seq. number:2364937490 Ack seq:2671736086
+FLAGS: ACK 
+Window: 65535
+Checksum: 53247
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.130 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:1764 Seq. number:2364937490 Ack seq:2688513302
+FLAGS: ACK 
+Window: 65535
+Checksum: 52991
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.217.20.3
+Source port:53978 Destination port:47873 Seq. number:342039503 Ack seq:2561090066
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 7629
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.217.20.3
+Source port:53978 Destination port:47873 Seq. number:744692687 Ack seq:2561090066
+FLAGS: ACK FIN 
+Window: 13560
+Checksum: 1485
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.195
+Source port:19628 Destination port:47873 Seq. number:1794982024 Ack seq:2373429010
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 65380
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.39.14 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:59538 Seq. number:2619150354 Ack seq:1920213973
+FLAGS: ACK 
+Window: 65535
+Checksum: 55007
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.39.14 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:59538 Seq. number:2619150354 Ack seq:1936991189
+FLAGS: ACK 
+Window: 65535
+Checksum: 54751
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.217.20.3 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:53978 Seq. number:2561090066 Ack seq:744692687
+FLAGS: ACK 
+Window: 65535
+Checksum: 22810
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.217.20.3 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:53978 Seq. number:2561090066 Ack seq:761469903
+FLAGS: ACK 
+Window: 65535
+Checksum: 22554
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.195
+Source port:19628 Destination port:47873 Seq. number:2197635208 Ack seq:2373429010
+FLAGS: ACK FIN 
+Window: 13560
+Checksum: 59236
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.64.155.249
+Source port:46786 Destination port:47873 Seq. number:3603257654 Ack seq:1531182097
+FLAGS: ACK PSH 
+Window: 15605
+Checksum: 31572
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.64.155.249
+Source port:46786 Destination port:47873 Seq. number:4005910838 Ack seq:1531182097
+FLAGS: ACK FIN 
+Window: 15605
+Checksum: 25428
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.195 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:19628 Seq. number:2373429010 Ack seq:2197635208
+FLAGS: ACK 
+Window: 65535
+Checksum: 2189
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.195 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:19628 Seq. number:2373429010 Ack seq:2214412424
+FLAGS: ACK 
+Window: 65535
+Checksum: 1933
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.64.155.249 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:46786 Seq. number:1531182097 Ack seq:4005910838
+FLAGS: ACK 
+Window: 65535
+Checksum: 31557
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.64.155.249 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:46786 Seq. number:1531182097 Ack seq:4022688054
+FLAGS: ACK 
+Window: 65535
+Checksum: 31301
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 104.76.220.193
+Source port:150 Destination port:20480 Seq. number:3580434737 Ack seq:2058721810
+FLAGS: ACK FIN 
+Window: 49401
+Checksum: 14161
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.39.4
+Source port:61130 Destination port:47873 Seq. number:1229866731 Ack seq:4097417490
+FLAGS: ACK PSH 
+Window: 65535
+Checksum: 16578
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.39.4
+Source port:61130 Destination port:47873 Seq. number:1632519915 Ack seq:4097417490
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 10434
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 104.76.220.193 Destination IP Address: 10.0.2.15
+Source port:20480 Destination port:150 Seq. number:2058721810 Ack seq:3597211953
+FLAGS: ACK 
+Window: 65535
+Checksum: 25445
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.39.4 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:61130 Seq. number:4097417490 Ack seq:1632519915
+FLAGS: ACK 
+Window: 65535
+Checksum: 57242
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.39.4 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:61130 Seq. number:4097417490 Ack seq:1649297131
+FLAGS: ACK 
+Window: 65535
+Checksum: 56986
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.107.243.93
+Source port:18098 Destination port:47873 Seq. number:3518160757 Ack seq:2784041745
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 2594
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.107.243.93
+Source port:18098 Destination port:47873 Seq. number:3920813941 Ack seq:2784041745
+FLAGS: ACK FIN 
+Window: 13560
+Checksum: 61985
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.107.243.93 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:18098 Seq. number:2784041745 Ack seq:3920813941
+FLAGS: ACK 
+Window: 65535
+Checksum: 29102
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.107.243.93 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:18098 Seq. number:2784041745 Ack seq:3937591157
+FLAGS: ACK 
+Window: 65535
+Checksum: 28846
+Urgent Pointer: 0
+UDP RECEIVED
+Source IP Address: 192.168.20.74 Destination IP Address: 10.0.2.15
+Source port:13568 Destination port:62362 Length:33536 Checksum:52060
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:13568 Destination port:2730 Length:36352 Checksum:54782
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:13568 Destination port:2730 Length:36352 Checksum:54782
+UDP RECEIVED
+Source IP Address: 192.168.20.74 Destination IP Address: 10.0.2.15
+Source port:13568 Destination port:1940 Length:51200 Checksum:64091
+UDP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 192.168.20.74
+Source port:19890 Destination port:13568 Length:18176 Checksum:23009
+UDP RECEIVED
+Source IP Address: 192.168.20.74 Destination IP Address: 10.0.2.15
+Source port:13568 Destination port:19890 Length:18176 Checksum:50444
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:13568 Destination port:2730 Length:52480 Checksum:5375
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:13568 Destination port:2730 Length:52480 Checksum:5375
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:58789 Destination port:13568 Length:17152 Checksum:35582
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:58789 Destination port:13568 Length:17152 Checksum:35582
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:58789 Destination port:13568 Length:17152 Checksum:35582
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:58789 Destination port:13568 Length:17152 Checksum:35582
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:13568 Destination port:58789 Length:56576 Checksum:9471
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:13568 Destination port:58789 Length:56576 Checksum:9471
+UDP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 192.168.20.74
+Source port:28111 Destination port:13568 Length:18176 Checksum:23009
+UDP RECEIVED
+Source IP Address: 192.168.20.74 Destination IP Address: 10.0.2.15
+Source port:13568 Destination port:28111 Length:18176 Checksum:58114
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:13568 Destination port:58789 Length:52480 Checksum:5375
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:13568 Destination port:58789 Length:52480 Checksum:5375
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:20711 Destination port:47873 Seq. number:2559919033 Ack seq:0
+FLAGS: SYN 
+Window: 61690
+Checksum: 12543
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.107.243.93 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:18098 Seq. number:2784041745 Ack seq:3937591157
+FLAGS: ACK PSH 
+Window: 65535
+Checksum: 42471
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.107.243.93
+Source port:18098 Destination port:47873 Seq. number:3937591157 Ack seq:0
+FLAGS: RST 
+Window: 0
+Checksum: 15793
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.107.243.93 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:18098 Seq. number:3186694929 Ack seq:3937591157
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 22446
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.107.243.93
+Source port:18098 Destination port:47873 Seq. number:3937591157 Ack seq:0
+FLAGS: RST 
+Window: 0
+Checksum: 15793
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.107.243.93 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:18098 Seq. number:0 Ack seq:3937591157
+FLAGS: ACK RST 
+Window: 0
+Checksum: 11697
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:1216 Seq. number:3121420817 Ack seq:4131594935
+FLAGS: ACK PSH 
+Window: 65535
+Checksum: 15583
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:1216 Destination port:47873 Seq. number:4131594935 Ack seq:0
+FLAGS: RST 
+Window: 0
+Checksum: 1524
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.180.238 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:53970 Seq. number:2650850065 Ack seq:125786521
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 35936
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.180.238
+Source port:53970 Destination port:47873 Seq. number:125786521 Ack seq:2667627281
+FLAGS: ACK 
+Window: 13560
+Checksum: 22376
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 104.76.220.193 Destination IP Address: 10.0.2.15
+Source port:20480 Destination port:150 Seq. number:2058721810 Ack seq:3597211953
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 25189
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 104.76.220.193
+Source port:150 Destination port:20480 Seq. number:3597211953 Ack seq:2075499026
+FLAGS: ACK 
+Window: 49401
+Checksum: 41323
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.195 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:18049 Seq. number:3039770130 Ack seq:3044523866
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 42419
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.195
+Source port:18049 Destination port:47873 Seq. number:3044523866 Ack seq:3056547346
+FLAGS: ACK 
+Window: 13560
+Checksum: 28859
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.163 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:50361 Seq. number:3040163090 Ack seq:2057739955
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 41702
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.163
+Source port:50361 Destination port:47873 Seq. number:2057739955 Ack seq:3056940306
+FLAGS: ACK 
+Window: 13560
+Checksum: 28142
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.195 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:19628 Seq. number:2373429010 Ack seq:2214412424
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 1677
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.195
+Source port:19628 Destination port:47873 Seq. number:2214412424 Ack seq:2390206226
+FLAGS: ACK 
+Window: 13560
+Checksum: 53652
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.39.4 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:61130 Seq. number:4097417490 Ack seq:1649297131
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 56730
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.39.4
+Source port:61130 Destination port:47873 Seq. number:1649297131 Ack seq:4114194706
+FLAGS: ACK 
+Window: 26837
+Checksum: 29893
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.64.155.249 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:46786 Seq. number:1531182097 Ack seq:4022688054
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 31045
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.64.155.249
+Source port:46786 Destination port:47873 Seq. number:4022688054 Ack seq:1547959313
+FLAGS: ACK 
+Window: 15605
+Checksum: 15440
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.161 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:50315 Seq. number:2874748690 Ack seq:1558654712
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 17003
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.161
+Source port:50315 Destination port:47873 Seq. number:1558654712 Ack seq:2891525906
+FLAGS: ACK 
+Window: 15605
+Checksum: 1398
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 216.239.32.36 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:11423 Seq. number:4180872210 Ack seq:3068824100
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 33716
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 216.239.32.36
+Source port:11423 Destination port:47873 Seq. number:3068824100 Ack seq:4197649426
+FLAGS: ACK 
+Window: 15605
+Checksum: 18111
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.217.20.3 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:53978 Seq. number:2561090066 Ack seq:761469903
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 22298
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.217.20.3
+Source port:53978 Destination port:47873 Seq. number:761469903 Ack seq:2577867282
+FLAGS: ACK 
+Window: 13560
+Checksum: 8738
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:20711 Destination port:47873 Seq. number:2559919033 Ack seq:0
+FLAGS: SYN 
+Window: 61690
+Checksum: 12543
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 104.18.32.115 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:49885 Seq. number:2721439505 Ack seq:2640783119
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 31869
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 104.18.32.115
+Source port:49885 Destination port:47873 Seq. number:2640783119 Ack seq:2738216721
+FLAGS: ACK 
+Window: 35577
+Checksum: 61827
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.250.201.194 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:56474 Seq. number:1198499346 Ack seq:255451403
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 37607
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.250.201.194
+Source port:56474 Destination port:47873 Seq. number:255451403 Ack seq:1215276562
+FLAGS: ACK 
+Window: 42745
+Checksum: 60397
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.39.14 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:59538 Seq. number:2619150354 Ack seq:1936991189
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 54495
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.39.14
+Source port:59538 Destination port:47873 Seq. number:1936991189 Ack seq:2635927570
+FLAGS: ACK 
+Window: 15605
+Checksum: 38890
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 142.251.208.130 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:1764 Seq. number:2364937490 Ack seq:2688513302
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 52735
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 142.251.208.130
+Source port:1764 Destination port:47873 Seq. number:2688513302 Ack seq:2381714706
+FLAGS: ACK 
+Window: 15605
+Checksum: 37130
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 172.217.19.98 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:41698 Seq. number:2373855506 Ack seq:2581066379
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 59658
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 172.217.19.98
+Source port:41698 Destination port:47873 Seq. number:2581066379 Ack seq:2390632722
+FLAGS: ACK 
+Window: 13560
+Checksum: 46098
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 108.177.119.84 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:49321 Seq. number:3095603218 Ack seq:3754707107
+FLAGS: ACK FIN 
+Window: 65535
+Checksum: 15118
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 108.177.119.84
+Source port:49321 Destination port:47873 Seq. number:3754707107 Ack seq:3112380434
+FLAGS: ACK 
+Window: 15605
+Checksum: 65048
+Urgent Pointer: 0
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:37627 Destination port:13568 Length:14848 Checksum:33278
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:37627 Destination port:13568 Length:14848 Checksum:33278
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:65385 Destination port:13568 Length:14848 Checksum:33278
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:65385 Destination port:13568 Length:14848 Checksum:33278
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 20.189.173.1
+Source port:43719 Destination port:47873 Seq. number:2701935029 Ack seq:4147157002
+FLAGS: ACK PSH 
+Window: 49396
+Checksum: 23758
+Urgent Pointer: 0
+UDP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 192.168.20.74
+Source port:40077 Destination port:13568 Length:14848 Checksum:19681
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 20.189.173.1
+Source port:2724 Destination port:13693 Seq. number:2775608668 Ack seq:4153740285
+FLAGS: URG ACK PSH 
+Window: 21968
+Checksum: 63964
+Urgent Pointer: 36627
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 20.189.173.1
+Source port:25085 Destination port:18041 Seq. number:4149324375 Ack seq:262255232
+FLAGS: URG PSH RST 
+Window: 14720
+Checksum: 62537
+Urgent Pointer: 19497
+UDP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 192.168.20.74
+Source port:26989 Destination port:29283 Length:29551 Checksum:26223
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:26989 Destination port:29283 Seq. number:1718580079 Ack seq:1868759924
+FLAGS: 
+Window: 16640
+Checksum: 256
+Urgent Pointer: 19497
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:26989 Destination port:29283 Seq. number:1718580079 Ack seq:1868759924
+FLAGS: 
+Window: 16640
+Checksum: 256
+Urgent Pointer: 19497
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:26989 Destination port:29283 Seq. number:1718580079 Ack seq:1868759924
+FLAGS: 
+Window: 16640
+Checksum: 256
+Urgent Pointer: 19497
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:26989 Destination port:29283 Seq. number:1718580079 Ack seq:1868759924
+FLAGS: 
+Window: 16640
+Checksum: 256
+Urgent Pointer: 19497
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:26989 Destination port:29283 Seq. number:1718580079 Ack seq:1868759924
+FLAGS: 
+Window: 16640
+Checksum: 256
+Urgent Pointer: 19497
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:26989 Destination port:29283 Seq. number:1718580079 Ack seq:1868759924
+FLAGS: 
+Window: 16640
+Checksum: 256
+Urgent Pointer: 19497
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:26989 Destination port:29283 Seq. number:1718580079 Ack seq:1868759924
+FLAGS: 
+Window: 16640
+Checksum: 256
+Urgent Pointer: 19497
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:26989 Destination port:29283 Length:29551 Checksum:26223
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:26989 Destination port:29283 Length:29551 Checksum:26223
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:26989 Destination port:29283 Length:29551 Checksum:26223
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:26989 Destination port:29283 Length:29551 Checksum:26223
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:26989 Destination port:29283 Seq. number:1718580079 Ack seq:1868759924
+FLAGS: 
+Window: 16640
+Checksum: 256
+Urgent Pointer: 19497
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:26989 Destination port:29283 Seq. number:1718580079 Ack seq:1868759924
+FLAGS: 
+Window: 16640
+Checksum: 256
+Urgent Pointer: 19497
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:26989 Destination port:29283 Seq. number:1718580079 Ack seq:1868759924
+FLAGS: 
+Window: 16640
+Checksum: 256
+Urgent Pointer: 19497
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:1020 Destination port:33795 Seq. number:3164161840 Ack seq:464359142
+FLAGS: PSH SYN FIN 
+Window: 43583
+Checksum: 37135
+Urgent Pointer: 49797
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:1020 Destination port:33795 Seq. number:3164161840 Ack seq:464359142
+FLAGS: PSH SYN FIN 
+Window: 43583
+Checksum: 37135
+Urgent Pointer: 49797
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:44037 Seq. number:22618 Ack seq:4061857344
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:69 Destination port:10240 Seq. number:4242479 Ack seq:302777920
+FLAGS: 
+Window: 3842
+Checksum: 30754
+Urgent Pointer: 31696
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:23605 Destination port:49106 Seq. number:2751855669 Ack seq:3021748346
+FLAGS: URG RST FIN 
+Window: 60925
+Checksum: 1478
+Urgent Pointer: 29467
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:23605 Destination port:49106 Seq. number:2751855669 Ack seq:3021748346
+FLAGS: URG RST FIN 
+Window: 60925
+Checksum: 1478
+Urgent Pointer: 29467
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:23130 Destination port:0 Seq. number:3021866560 Ack seq:2077259810
+FLAGS: 
+Window: 3842
+Checksum: 47873
+Urgent Pointer: 20711
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:48687 Destination port:64 Seq. number:269223488 Ack seq:251789322
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 20711
+Urgent Pointer: 47873
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:48943 Destination port:64 Seq. number:3205170752 Ack seq:251789322
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 20711
+Urgent Pointer: 47873
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:49199 Destination port:64 Seq. number:3758818880 Ack seq:251789322
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 20711
+Urgent Pointer: 47873
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:23386 Destination port:0 Seq. number:1931544128 Ack seq:2077259810
+FLAGS: 
+Window: 3842
+Checksum: 47873
+Urgent Pointer: 20711
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:17452 Destination port:16568 Seq. number:1659427749 Ack seq:2405203126
+FLAGS: ACK PSH 
+Window: 29996
+Checksum: 26309
+Urgent Pointer: 12700
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:20711 Destination port:47873 Seq. number:3499967417 Ack seq:3397198355
+FLAGS: ACK 
+Window: 13560
+Checksum: 53508
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:20711 Seq. number:3397198355 Ack seq:479740857
+FLAGS: ACK 
+Window: 65535
+Checksum: 31205
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:20711 Destination port:47873 Seq. number:2225292217 Ack seq:3397198355
+FLAGS: ACK PSH 
+Window: 13560
+Checksum: 48639
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:20711 Seq. number:3397198355 Ack seq:3499967417
+FLAGS: ACK 
+Window: 65535
+Checksum: 50655
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:20711 Seq. number:3397198355 Ack seq:2225292217
+FLAGS: ACK 
+Window: 65535
+Checksum: 4570
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:47873 Destination port:20711 Seq. number:3397198355 Ack seq:631522233
+FLAGS: ACK 
+Window: 65535
+Checksum: 28889
+Urgent Pointer: 0
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:11653 Destination port:0 Seq. number:33751831 Ack seq:3211042087
+FLAGS: RST SYN FIN 
+Window: 29046
+Checksum: 59431
+Urgent Pointer: 7585
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:15359 Destination port:0 Seq. number:197399 Ack seq:1571625242
+FLAGS: URG 
+Window: 24540
+Checksum: 27627
+Urgent Pointer: 819
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:59350 Destination port:0 Seq. number:0 Ack seq:1571618816
+FLAGS: URG 
+Window: 24540
+Checksum: 27627
+Urgent Pointer: 819
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:21145 Destination port:0 Seq. number:197399 Ack seq:3116289050
+FLAGS: PSH RST FIN 
+Window: 14078
+Checksum: 6347
+Urgent Pointer: 24563
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:7423 Destination port:0 Seq. number:197399 Ack seq:3116289050
+FLAGS: PSH RST FIN 
+Window: 14078
+Checksum: 6347
+Urgent Pointer: 24563
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:791 Destination port:259 Seq. number:2548384692 Ack seq:4009711063
+FLAGS: URG ACK SYN 
+Window: 37933
+Checksum: 36316
+Urgent Pointer: 25061
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:791 Destination port:259 Seq. number:2548384692 Ack seq:4009711063
+FLAGS: URG ACK SYN 
+Window: 37933
+Checksum: 36316
+Urgent Pointer: 25061
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:791 Destination port:3 Seq. number:360081954 Ack seq:4047071208
+FLAGS: URG ACK PSH SYN 
+Window: 32265
+Checksum: 53719
+Urgent Pointer: 61461
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:791 Destination port:3 Seq. number:1442401043 Ack seq:2888335792
+FLAGS: ACK RST FIN 
+Window: 56598
+Checksum: 24509
+Urgent Pointer: 41582
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:791 Destination port:3 Seq. number:1442401043 Ack seq:2888335792
+FLAGS: ACK RST FIN 
+Window: 56598
+Checksum: 24509
+Urgent Pointer: 41582
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:0 Destination port:0 Seq. number:1442381824 Ack seq:2888335792
+FLAGS: ACK RST FIN 
+Window: 56598
+Checksum: 24509
+Urgent Pointer: 41582
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:0 Destination port:0 Seq. number:1442381824 Ack seq:2888335792
+FLAGS: ACK RST FIN 
+Window: 56598
+Checksum: 24509
+Urgent Pointer: 41582
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:0 Destination port:0 Seq. number:1442381824 Ack seq:2888335792
+FLAGS: ACK RST FIN 
+Window: 56598
+Checksum: 24509
+Urgent Pointer: 41582
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:26888 Destination port:25454 Length:28015 Checksum:28265
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:26888 Destination port:25454 Length:28015 Checksum:28265
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:26888 Destination port:25454 Length:28015 Checksum:28265
+UDP RECEIVED
+Source IP Address: 127.0.0.1 Destination IP Address: 127.0.0.53
+Source port:26888 Destination port:25454 Length:28015 Checksum:28265
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:26888 Destination port:25454 Length:28015 Checksum:28265
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:26888 Destination port:25454 Length:28015 Checksum:28265
+UDP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 192.168.20.74
+Source port:29714 Destination port:27749 Length:28005 Checksum:29797
+UDP RECEIVED
+Source IP Address: 192.168.20.74 Destination IP Address: 10.0.2.15
+Source port:29714 Destination port:27749 Length:28005 Checksum:29797
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:26888 Destination port:25454 Length:28015 Checksum:28265
+UDP RECEIVED
+Source IP Address: 127.0.0.53 Destination IP Address: 127.0.0.1
+Source port:26888 Destination port:25454 Length:28015 Checksum:28265
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:1026 Destination port:46085 Seq. number:168296964 Ack seq:4259562850
+FLAGS: 
+Window: 0
+Checksum: 769
+Urgent Pointer: 1795
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:1026 Destination port:46085 Seq. number:168296448 Ack seq:4259562850
+FLAGS: 
+Window: 0
+Checksum: 769
+Urgent Pointer: 1795
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:1026 Destination port:46085 Seq. number:168296448 Ack seq:4259562850
+FLAGS: 
+Window: 0
+Checksum: 769
+Urgent Pointer: 1795
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:0 Destination port:0 Seq. number:168296448 Ack seq:4259562850
+FLAGS: 
+Window: 0
+Checksum: 769
+Urgent Pointer: 1795
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:0 Destination port:0 Seq. number:168296448 Ack seq:4259562850
+FLAGS: 
+Window: 0
+Checksum: 769
+Urgent Pointer: 1795
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:1020 Destination port:62467 Seq. number:104997521 Ack seq:1794197812
+FLAGS: URG ACK RST SYN FIN 
+Window: 12335
+Checksum: 43378
+Urgent Pointer: 63067
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:1020 Destination port:62467 Seq. number:104997521 Ack seq:1794197812
+FLAGS: URG ACK RST SYN FIN 
+Window: 12335
+Checksum: 43378
+Urgent Pointer: 63067
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:19899 Destination port:6563 Seq. number:197387273 Ack seq:726054775
+FLAGS: ACK FIN 
+Window: 43188
+Checksum: 2375
+Urgent Pointer: 46868
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:19899 Destination port:6563 Seq. number:197387273 Ack seq:726054775
+FLAGS: ACK FIN 
+Window: 43188
+Checksum: 2375
+Urgent Pointer: 46868
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:30754 Destination port:31696 Seq. number:251789322 Ack seq:1860483841
+FLAGS: URG RST FIN 
+Window: 34403
+Checksum: 15999
+Urgent Pointer: 37092
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:10 Destination port:3842 Seq. number:2077259810 Ack seq:3137433316
+FLAGS: URG ACK PSH RST SYN 
+Window: 37092
+Checksum: 9491
+Urgent Pointer: 2665
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:56991 Destination port:0 Seq. number:3914240120 Ack seq:2625247423
+FLAGS: URG ACK PSH RST 
+Window: 54803
+Checksum: 19769
+Urgent Pointer: 56376
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:7423 Destination port:0 Seq. number:3914240120 Ack seq:2625247423
+FLAGS: URG ACK PSH RST 
+Window: 54803
+Checksum: 19769
+Urgent Pointer: 56376
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:27903 Destination port:0 Seq. number:197396 Ack seq:51839233
+FLAGS: 
+Window: 15173
+Checksum: 65257
+Urgent Pointer: 56553
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:39399 Destination port:0 Seq. number:0 Ack seq:51838976
+FLAGS: 
+Window: 15173
+Checksum: 65257
+Urgent Pointer: 56553
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:19199 Destination port:0 Seq. number:197399 Ack seq:364794921
+FLAGS: PSH RST SYN FIN 
+Window: 49671
+Checksum: 59827
+Urgent Pointer: 63803
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:19967 Destination port:0 Seq. number:197399 Ack seq:17306924
+FLAGS: URG RST SYN 
+Window: 30283
+Checksum: 41905
+Urgent Pointer: 56656
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:15999 Destination port:16357 Seq. number:3396019475 Ack seq:888674384
+FLAGS: URG RST SYN 
+Window: 0
+Checksum: 791
+Urgent Pointer: 3
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:21009 Destination port:59446 Seq. number:3972000528 Ack seq:173943748
+FLAGS: 
+Window: 50548
+Checksum: 19913
+Urgent Pointer: 20523
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:30754 Destination port:31696 Seq. number:3137433316 Ack seq:2968600191
+FLAGS: URG RST FIN 
+Window: 51819
+Checksum: 6224
+Urgent Pointer: 13560
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:28518 Destination port:12330 Seq. number:1619221095 Ack seq:535913887
+FLAGS: RST SYN FIN 
+Window: 65143
+Checksum: 54900
+Urgent Pointer: 32033
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:45890 Destination port:24021 Seq. number:1793790062 Ack seq:165510873
+FLAGS: ACK PSH RST SYN 
+Window: 41134
+Checksum: 5201
+Urgent Pointer: 52534
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:45890 Destination port:24021 Seq. number:1793790062 Ack seq:165510873
+FLAGS: ACK PSH RST SYN 
+Window: 41134
+Checksum: 5201
+Urgent Pointer: 52534
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:29500 Destination port:52668 Seq. number:1191993481 Ack seq:1680538879
+FLAGS: ACK PSH RST SYN FIN 
+Window: 24185
+Checksum: 48103
+Urgent Pointer: 57193
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:0 Destination port:0 Seq. number:1191968768 Ack seq:1680538879
+FLAGS: ACK PSH RST SYN FIN 
+Window: 24185
+Checksum: 48103
+Urgent Pointer: 57193
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:6224 Destination port:13560 Seq. number:34058 Ack seq:1047345272
+FLAGS: PSH SYN 
+Window: 13019
+Checksum: 40630
+Urgent Pointer: 40429
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:4176 Destination port:65535 Seq. number:12774 Ack seq:0
+FLAGS: 
+Window: 13019
+Checksum: 40630
+Urgent Pointer: 40429
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:4176 Destination port:65535 Seq. number:32224 Ack seq:0
+FLAGS: 
+Window: 13019
+Checksum: 40630
+Urgent Pointer: 40429
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:4176 Destination port:65535 Seq. number:51674 Ack seq:0
+FLAGS: 
+Window: 13019
+Checksum: 40630
+Urgent Pointer: 40429
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:4176 Destination port:65535 Seq. number:5589 Ack seq:0
+FLAGS: 
+Window: 13019
+Checksum: 40630
+Urgent Pointer: 40429
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:4176 Destination port:65535 Seq. number:25039 Ack seq:0
+FLAGS: 
+Window: 13019
+Checksum: 40630
+Urgent Pointer: 40429
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:4176 Destination port:65535 Seq. number:44489 Ack seq:0
+FLAGS: 
+Window: 13019
+Checksum: 40630
+Urgent Pointer: 40429
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:4176 Destination port:65535 Seq. number:63939 Ack seq:0
+FLAGS: 
+Window: 13019
+Checksum: 40630
+Urgent Pointer: 40429
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:4176 Destination port:65535 Seq. number:17854 Ack seq:0
+FLAGS: 
+Window: 13019
+Checksum: 40630
+Urgent Pointer: 40429
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:1600 Destination port:58830 Seq. number:251789322 Ack seq:2077259810
+FLAGS: URG PSH RST SYN 
+Window: 47873
+Checksum: 16255
+Urgent Pointer: 1061
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:12196 Destination port:33495 Seq. number:2235467988 Ack seq:2927758169
+FLAGS: PSH RST 
+Window: 5723
+Checksum: 29958
+Urgent Pointer: 19824
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:69 Destination port:49922 Seq. number:4228193 Ack seq:2933327424
+FLAGS: 
+Window: 3842
+Checksum: 30754
+Urgent Pointer: 31696
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:31066 Ack seq:1428227648
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:31322 Ack seq:1411450432
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:31578 Ack seq:1394673216
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:31834 Ack seq:1377896000
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:32090 Ack seq:1361118784
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:32346 Ack seq:1344341568
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:32602 Ack seq:1327564352
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:32858 Ack seq:1310787136
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:10240 Seq. number:33114 Ack seq:1294009920
+FLAGS: URG ACK PSH 
+Window: 31696
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 20.189.173.1 Destination IP Address: 10.0.2.15
+Source port:69 Destination port:19200 Seq. number:33370 Ack seq:1582433856
+FLAGS: URG ACK PSH RST FIN 
+Window: 429
+Checksum: 10
+Urgent Pointer: 3842
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 20.189.173.1
+Source port:69 Destination port:10240 Seq. number:4216308 Ack seq:2910324288
+FLAGS: 
+Window: 3842
+Checksum: 48404
+Urgent Pointer: 429
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:9491 Destination port:51819 Seq. number:1866350463 Ack seq:4294907984
+FLAGS: ACK SYN FIN 
+Window: 0
+Checksum: 791
+Urgent Pointer: 515
+TCP RECEIVED
+Source IP Address: 10.0.2.15 Destination IP Address: 34.120.208.123
+Source port:16255 Destination port:28478 Seq. number:1399727379 Ack seq:888674384
+FLAGS: URG ACK PSH SYN FIN 
+Window: 0
+Checksum: 791
+Urgent Pointer: 3
+TCP RECEIVED
+Source IP Address: 34.120.208.123 Destination IP Address: 10.0.2.15
+Source port:9491 Destination port:21358 Seq. numbe
