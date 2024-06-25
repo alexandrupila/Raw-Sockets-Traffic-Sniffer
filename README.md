@@ -25,3 +25,8 @@ Am adaugat abilitatea de a filtra dupa ip si port si incerc sa fac astfel incat 
 afiseze DNS-urile capturate. Am cautat niste librarii pe net ca sa ma ajute cu structurile acelea
 
 De aici am luat structura din utils.h: https://github.com/seladb/PcapPlusPlus
+
+22.06
+
+Am implementat afisarea traficului de ARP si celui de IGMP. Am luat structurile din acelasi loc din care
+am luat pentru dns.

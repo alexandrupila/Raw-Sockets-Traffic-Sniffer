@@ -81,11 +81,57 @@ int isDNS(unsigned char* buffer, int size,int type)
 
 }
 
+void printARP(unsigned char* buffer, int size, FILE* logfile)
+{
+    struct ethhdr* eth=(struct ethhdr*)(buffer);
+
+    printf("ARP Identified\n");
+
+    struct arphdr* arp=(struct arphdr*)(buffer+sizeof(struct ethhdr));
+
+    char ipSource[INET_ADDRSTRLEN];
+    inet_ntop(AF_INET,&(arp->senderIpAddr),ipSource,INET_ADDRSTRLEN);
+
+    char ipDestination[INET_ADDRSTRLEN];
+    inet_ntop(AF_INET,&(arp->targetIpAddr),ipDestination,INET_ADDRSTRLEN);
+
+    if(htons(arp->opcode)==1) 
+    {   
+        printf("ARP REQUEST\n");
+
+        fprintf(logfile,"ARP RECEIVED\n");
+        fprintf(logfile,"Operation type: Request\n");
+
+        fprintf(logfile,"Sender MAC: %x, Sender IP: %s\n",arp->senderMacAddr,ipSource);
+
+        fprintf(logfile,"Target IP Address: %s\n",ipDestination);
+    }
+    else if(htons(arp->opcode)==2)
+    {   
+        printf("ARP REPLY\n");
+
+        fprintf(logfile,"ARP RECEIVED\n");
+        fprintf(logfile,"Operation type: Reply\n");
+
+        fprintf(logfile,"Sender MAC: %x, Sender IP: %s\n",arp->senderMacAddr,ipSource);
+
+        fprintf(logfile,"Target MAC: %x, Target IP: %s\n",arp->targetMacAddr,ipDestination);
+
+    }
+
+}
+
 void processPacket(unsigned char* buffer, int size,FILE* logfile)
 {   
     struct ethhdr* eth=(struct ethhdr*)(buffer);
 
-    if(htons(eth->h_proto)!=0x800) return;
+    if(htons(eth->h_proto)==0x806)
+    {
+        printARP(buffer,size,logfile);
+        return;
+    }
+
+    //if(htons(eth->h_proto)!=0x800) return;
 
     struct iphdr *iph=(struct iphdr*) (buffer+sizeof(struct ethhdr));
     switch(iph->protocol)
@@ -96,6 +142,7 @@ void processPacket(unsigned char* buffer, int size,FILE* logfile)
             break;
         case 2:
             printf("IGMP Packet received\n");
+            printIGMP(buffer,size,logfile);
             break;
         case 6:
             printf("TCP Packet received\n");
@@ -128,6 +175,7 @@ void processFilteredPacket(unsigned char* buffer,int size, FILE* logfile,struct 
             break;
         case 2:
             printf("IGMP Packet received\n");
+            printIGMP(buffer,size,logfile);
             break;
         case 6:
             printf("TCP Packet received\n");
@@ -243,6 +291,46 @@ void printICMP(unsigned char* buffer, int size, FILE* logfile)
     fprintf(logfile,"Checksum: %d\n",(unsigned int)icmph->checksum);
 
 }
+
+void printIGMP(unsigned char* buffer, int size, FILE* logfile)
+{
+    unsigned short iphdrlen;
+    struct iphdr* iph=(struct iphdr*) buffer+sizeof(struct ethhdr);
+    iphdrlen=iph->ihl*4;
+
+    struct igmp_header* igmph=(struct igmp_header*) buffer+iphdrlen+sizeof(struct ethhdr);
+    
+    fprintf(logfile,"IGMP RECEIVED\n");
+
+    printIPs(buffer,size,logfile);
+
+    if(igmph->type==IgmpType_MembershipQuery) 
+    {
+        fprintf(logfile,"IGMP Type: Membership Query\n");
+    }
+    else if(igmph->type==IgmpType_MembershipReportV1)
+    {
+        fprintf(logfile,"IGMP Type: Membership Report V1\n");
+    }
+    else if(igmph->type==IgmpType_MembershipReportV2)
+    {
+        fprintf(logfile,"IGMP Type: Membership Report V2\n");
+    }
+    else if(igmph->type==IgmpType_MembershipReportV3)
+    {
+        fprintf(logfile,"IGMP Type: Membership Report V3\n");
+    }
+    else if(igmph->type==IgmpType_LeaveGroup)
+    {
+        fprintf(logfile,"IGMP Type: Leave Group\n");
+    }
+
+    char groupIp[INET_ADDRSTRLEN];
+    inet_ntop(AF_INET,&(igmph->groupAddress),groupIp,INET_ADDRSTRLEN);
+
+    fprintf(logfile,"Group Address: %s\n",groupIp);
+}
+
 
 void monitorICMP(unsigned char* buffer, int size, FILE* logfile)
 {   
