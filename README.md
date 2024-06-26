@@ -30,3 +30,8 @@ De aici am luat structura din utils.h: https://github.com/seladb/PcapPlusPlus
 
 Am implementat afisarea traficului de ARP si celui de IGMP. Am luat structurile din acelasi loc din care
 am luat pentru dns.
+
+23.06
+
+Am implementat functie de data dump pentru a-mi afisa datele efective venite in hexa si in clar ceea ce se poate citi.
+De asemenea am reusit sa fac filtrarea dupa port

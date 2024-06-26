@@ -6,6 +6,8 @@
         "udp.h": "c",
         "ip_icmp.h": "c",
         "socket.h": "c",
-        "ethernet.h": "c"
+        "ethernet.h": "c",
+        "string.h": "c",
+        "stdio.h": "c"
     }
 }

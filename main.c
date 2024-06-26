@@ -17,6 +17,38 @@ typedef struct
 
 }ip_replies;
 
+void DumpHex(const void* data, size_t size, FILE* logfile) {
+
+    fprintf(logfile,"DATA DUMP\n");
+
+	char ascii[17];
+	size_t i, j;
+	ascii[16] = '\0';
+	for (i = 0; i < size; ++i) {
+		fprintf(logfile,"%02X ", ((unsigned char*)data)[i]);
+		if (((unsigned char*)data)[i] >= ' ' && ((unsigned char*)data)[i] <= '~') {
+			ascii[i % 16] = ((unsigned char*)data)[i];
+		} else {
+			ascii[i % 16] = '.';
+		}
+		if ((i+1) % 8 == 0 || i+1 == size) {
+			fprintf(logfile," ");
+			if ((i+1) % 16 == 0) {
+				fprintf(logfile,"|  %s \n", ascii);
+			} else if (i+1 == size) {
+				ascii[(i+1) % 16] = '\0';
+				if ((i+1) % 16 <= 8) {
+					fprintf(logfile," ");
+				}
+				for (j = (i+1) % 16; j < 16; ++j) {
+					fprintf(logfile,"   ");
+				}
+				fprintf(logfile,"|  %s \n", ascii);
+			}
+		}
+	}
+}
+
 void printIPs(unsigned char* buffer, int size,FILE* logfile)
 {   
     struct ethhdr* eth=(struct ethhdr*)(buffer);
@@ -81,46 +113,6 @@ int isDNS(unsigned char* buffer, int size,int type)
 
 }
 
-void printARP(unsigned char* buffer, int size, FILE* logfile)
-{
-    struct ethhdr* eth=(struct ethhdr*)(buffer);
-
-    printf("ARP Identified\n");
-
-    struct arphdr* arp=(struct arphdr*)(buffer+sizeof(struct ethhdr));
-
-    char ipSource[INET_ADDRSTRLEN];
-    inet_ntop(AF_INET,&(arp->senderIpAddr),ipSource,INET_ADDRSTRLEN);
-
-    char ipDestination[INET_ADDRSTRLEN];
-    inet_ntop(AF_INET,&(arp->targetIpAddr),ipDestination,INET_ADDRSTRLEN);
-
-    if(htons(arp->opcode)==1) 
-    {   
-        printf("ARP REQUEST\n");
-
-        fprintf(logfile,"ARP RECEIVED\n");
-        fprintf(logfile,"Operation type: Request\n");
-
-        fprintf(logfile,"Sender MAC: %x, Sender IP: %s\n",arp->senderMacAddr,ipSource);
-
-        fprintf(logfile,"Target IP Address: %s\n",ipDestination);
-    }
-    else if(htons(arp->opcode)==2)
-    {   
-        printf("ARP REPLY\n");
-
-        fprintf(logfile,"ARP RECEIVED\n");
-        fprintf(logfile,"Operation type: Reply\n");
-
-        fprintf(logfile,"Sender MAC: %x, Sender IP: %s\n",arp->senderMacAddr,ipSource);
-
-        fprintf(logfile,"Target MAC: %x, Target IP: %s\n",arp->targetMacAddr,ipDestination);
-
-    }
-
-}
-
 void processPacket(unsigned char* buffer, int size,FILE* logfile)
 {   
     struct ethhdr* eth=(struct ethhdr*)(buffer);
@@ -146,11 +138,11 @@ void processPacket(unsigned char* buffer, int size,FILE* logfile)
             break;
         case 6:
             printf("TCP Packet received\n");
-            printTCP(buffer,size,logfile);
+            printTCP(buffer,size,logfile,-1);
             break;
         case 17:
             printf("UDP Packet received\n");
-            printUDP(buffer,size,logfile);
+            printUDP(buffer,size,logfile,-1);
             break;
         default:
             printf("Currently Unknown Packet received\n");
@@ -158,7 +150,7 @@ void processPacket(unsigned char* buffer, int size,FILE* logfile)
     }
 }
 
-void processFilteredPacket(unsigned char* buffer,int size, FILE* logfile,struct in_addr address) 
+void processFilteredPacketIP(unsigned char* buffer,int size, FILE* logfile,struct in_addr address) 
 {   
     struct ethhdr* eth=(struct ethhdr*)(buffer);
     if(htons(eth->h_proto)!=0x800) return;
@@ -179,17 +171,48 @@ void processFilteredPacket(unsigned char* buffer,int size, FILE* logfile,struct 
             break;
         case 6:
             printf("TCP Packet received\n");
-            printTCP(buffer,size,logfile);
+            printTCP(buffer,size,logfile,-1);
             break;
         case 17:
             printf("UDP Packet received\n");
-            printUDP(buffer,size,logfile);
+            printUDP(buffer,size,logfile,-1);
             break;
         default:
             printf("Currently Unknown Packet received\n");
             break;
         }
     }
+}
+
+void processFilteredPacketPort(unsigned char* buffer, int size, FILE* logfile, int filteredPort)
+{
+    struct ethhdr* eth=(struct ethhdr*)(buffer);
+    if(htons(eth->h_proto)!=0x800) return;
+
+    struct iphdr *iph=(struct iphdr*) (buffer+sizeof(struct ethhdr));
+
+        switch(iph->protocol)
+        {
+        case 1:
+            printf("ICMP Packet received\n");
+            printICMP(buffer,size,logfile);
+            break;
+        case 2:
+            printf("IGMP Packet received\n");
+            printIGMP(buffer,size,logfile);
+            break;
+        case 6:
+            printf("TCP Packet received\n");
+            printTCP(buffer,size,logfile,filteredPort);
+            break;
+        case 17:
+            printf("UDP Packet received\n");
+            printUDP(buffer,size,logfile,filteredPort);
+            break;
+        default:
+            printf("Currently Unknown Packet received\n");
+            break;
+        }
 }
 
 void printHTTP(unsigned char* buffer, int size,FILE* logfile)
@@ -213,7 +236,7 @@ void printHTTP(unsigned char* buffer, int size,FILE* logfile)
 
 }
 
-void printTCP(unsigned char* buffer, int size,FILE* logfile)
+void printTCP(unsigned char* buffer, int size,FILE* logfile,int filteredPort)
 {       
 
     unsigned short iphdrlen;
@@ -222,11 +245,19 @@ void printTCP(unsigned char* buffer, int size,FILE* logfile)
 
     struct tcphdr* tcph=(struct tcphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
 
-    if(tcph->dest==80 || tcph->source==80) //aici trebuie sa modific, nu prea am dat de http pe portul ala va fi nevoie sa verific daca e GET/POST si altele in buffer
-    {   
-        printf("TCP CONTAINS HTTP\n");
-        printHTTP(buffer,size,logfile);
-        return;
+    // if(tcph->dest==80 || tcph->source==80) //aici trebuie sa modific, nu prea am dat de http pe portul ala va fi nevoie sa verific daca e GET/POST si altele in buffer
+    // {   
+    //     printf("TCP CONTAINS HTTP\n");
+    //     printHTTP(buffer,size,logfile);
+    //     return;
+    // }
+
+    if(filteredPort!=-1)
+    {
+        if(tcph->dest!=filteredPort && tcph->source!=filteredPort) 
+        {
+            return;
+        }
     }
 
     isDNS(buffer,size,1);
@@ -248,15 +279,26 @@ void printTCP(unsigned char* buffer, int size,FILE* logfile)
     fprintf(logfile,"Checksum: %d\n",tcph->check);
     fprintf(logfile,"Urgent Pointer: %d\n",tcph->urg_ptr);
 
+    DumpHex(buffer,size,logfile);
+
+    fprintf(logfile,"--------------------------------------------------------------------------------------------\n");
 }
 
-void printUDP(unsigned char* buffer, int size, FILE* logfile)
+void printUDP(unsigned char* buffer, int size, FILE* logfile,int filteredPort)
 {
     unsigned short iphdrlen;
     struct iphdr* iph=(struct iphdr*)buffer+sizeof(struct ethhdr);
     iphdrlen=iph->ihl*4;
 
     struct udphdr* udph=(struct udphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
+
+    if(filteredPort!=-1)
+    {
+        if(udph->dest!=filteredPort && udph->source!=filteredPort) 
+        {
+            return;
+        }
+    }
 
     isDNS(buffer,size,0);
 
@@ -265,6 +307,10 @@ void printUDP(unsigned char* buffer, int size, FILE* logfile)
     printIPs(buffer,size,logfile);
 
     fprintf(logfile,"Source port:%u Destination port:%u Length:%u Checksum:%u\n",udph->source,udph->dest,udph->len,udph->check);
+
+    DumpHex(buffer,size,logfile);
+
+    fprintf(logfile,"--------------------------------------------------------------------------------------------\n");
 
 }
 
@@ -289,6 +335,10 @@ void printICMP(unsigned char* buffer, int size, FILE* logfile)
 
     fprintf(logfile,"Code: %d\n",(unsigned int)icmph->code);
     fprintf(logfile,"Checksum: %d\n",(unsigned int)icmph->checksum);
+
+    DumpHex(buffer,size,logfile);
+
+    fprintf(logfile,"--------------------------------------------------------------------------------------------\n");
 
 }
 
@@ -329,8 +379,55 @@ void printIGMP(unsigned char* buffer, int size, FILE* logfile)
     inet_ntop(AF_INET,&(igmph->groupAddress),groupIp,INET_ADDRSTRLEN);
 
     fprintf(logfile,"Group Address: %s\n",groupIp);
+
+    DumpHex(buffer,size,logfile);
+
+    fprintf(logfile,"--------------------------------------------------------------------------------------------\n");
 }
 
+void printARP(unsigned char* buffer, int size, FILE* logfile)
+{
+    struct ethhdr* eth=(struct ethhdr*)(buffer);
+
+    printf("ARP Identified\n");
+
+    struct arphdr* arp=(struct arphdr*)(buffer+sizeof(struct ethhdr));
+
+    char ipSource[INET_ADDRSTRLEN];
+    inet_ntop(AF_INET,&(arp->senderIpAddr),ipSource,INET_ADDRSTRLEN);
+
+    char ipDestination[INET_ADDRSTRLEN];
+    inet_ntop(AF_INET,&(arp->targetIpAddr),ipDestination,INET_ADDRSTRLEN);
+
+    if(htons(arp->opcode)==1) 
+    {   
+        printf("ARP REQUEST\n");
+
+        fprintf(logfile,"ARP RECEIVED\n");
+        fprintf(logfile,"Operation type: Request\n");
+
+        fprintf(logfile,"Sender MAC: %x, Sender IP: %s\n",arp->senderMacAddr,ipSource);
+
+        fprintf(logfile,"Target IP Address: %s\n",ipDestination);
+    }
+    else if(htons(arp->opcode)==2)
+    {   
+        printf("ARP REPLY\n");
+
+        fprintf(logfile,"ARP RECEIVED\n");
+        fprintf(logfile,"Operation type: Reply\n");
+
+        fprintf(logfile,"Sender MAC: %x, Sender IP: %s\n",arp->senderMacAddr,ipSource);
+
+        fprintf(logfile,"Target MAC: %x, Target IP: %s\n",arp->targetMacAddr,ipDestination);
+
+    }
+
+    DumpHex(buffer,size,logfile);
+
+    fprintf(logfile,"--------------------------------------------------------------------------------------------\n");
+
+}
 
 void monitorICMP(unsigned char* buffer, int size, FILE* logfile)
 {   
@@ -385,6 +482,7 @@ int main(int argc, char* argv[])
     struct sockaddr saddr;
     struct in_addr in;
     struct in_addr ip_filter;
+    int port_filter;
 
     unsigned char* buffer=(unsigned char*) malloc (50000);
 
@@ -403,6 +501,12 @@ int main(int argc, char* argv[])
             printf("Filtering traffic by ip\n");
             char str[INET_ADDRSTRLEN];
             //inet_aton(argv[3],&(ip_filter.s_addr));
+            }
+            else if (strcmp(argv[2],"port")==0)
+            {
+                printf("Filtering traffic by port ");
+                port_filter=atoi(argv[3]);
+                printf(" %d\n",port_filter);
             }
         }
         else printf("Invalid argument\n");
@@ -434,7 +538,11 @@ int main(int argc, char* argv[])
             {   
                 if(strcmp(argv[2],"ip")==0)
                 {
-                processFilteredPacket(buffer,data_size,logfile,ip_filter);
+                processFilteredPacketIP(buffer,data_size,logfile,ip_filter);
+                }
+                else if (strcmp(argv[2],"port")==0)
+                {
+                processFilteredPacketPort(buffer,data_size,logfile,port_filter);
                 }
             }
         }
