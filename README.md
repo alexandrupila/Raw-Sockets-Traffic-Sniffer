@@ -35,3 +35,8 @@ am luat pentru dns.
 
 Am implementat functie de data dump pentru a-mi afisa datele efective venite in hexa si in clar ceea ce se poate citi.
 De asemenea am reusit sa fac filtrarea dupa port
+
+24.06
+
+Am facut procesarea DNS-urilor si afisarea acestora si am mai adaugat --help pentru a vedea filtrele disponibile.
+In principiu am cam terminat.

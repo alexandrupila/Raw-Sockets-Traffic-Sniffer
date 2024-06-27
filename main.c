@@ -82,8 +82,8 @@ int isDNS(unsigned char* buffer, int size,int type)
     else
     {
         struct udphdr* udph=(struct udphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
-        unsigned short udphdrlen;
-        dnsh=(struct dnshdr*)(buffer+sizeof(struct ethhdr)+iphdrlen+sizeof(struct udphdr));
+        unsigned short udphdrlen=udph->len;
+        dnsh=(struct dnshdr*)(buffer+sizeof(struct ethhdr)+iphdrlen+8);
     }
 
     
@@ -94,21 +94,8 @@ int isDNS(unsigned char* buffer, int size,int type)
     }
 
 
-    // if(ntohs(dnsh->numberOfQuestions)==1)
-    // {   
-    //     printf("Potential DNS Identified\n");
-
-
-
-    //     return 1;
-    // }
-
 
     return 0;
-    //int payload_offset=buffer+sizeof(struct ethhdr)+iphdrlen+tcphdrlen;
-
-    //unsigned char* payload=buffer+payload_offset;
-    //int payload_size=size-payload_offset;
 
 
 }
@@ -215,27 +202,6 @@ void processFilteredPacketPort(unsigned char* buffer, int size, FILE* logfile, i
         }
 }
 
-void printHTTP(unsigned char* buffer, int size,FILE* logfile)
-{
-    unsigned short iphdrlen;
-    struct iphdr* iph=(struct iphdr*) buffer+sizeof(struct ethhdr);
-    iphdrlen=iph->ihl*4;
-
-    struct tcphdr* tcph=(struct tcphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
-    unsigned short tcphdrlen;
-    tcphdrlen=tcph->doff*4;
-
-    int payload_offset=buffer+sizeof(struct ethhdr)+iphdrlen+tcphdrlen;
-
-    unsigned char* http_payload=buffer+payload_offset;
-    int http_payload_size=size-payload_offset;
-
-    fprintf(logfile,"HTTP RECEIVED\n");
-
-    fprintf(logfile,"%s",http_payload);
-
-}
-
 void printTCP(unsigned char* buffer, int size,FILE* logfile,int filteredPort)
 {       
 
@@ -245,12 +211,6 @@ void printTCP(unsigned char* buffer, int size,FILE* logfile,int filteredPort)
 
     struct tcphdr* tcph=(struct tcphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
 
-    // if(tcph->dest==80 || tcph->source==80) //aici trebuie sa modific, nu prea am dat de http pe portul ala va fi nevoie sa verific daca e GET/POST si altele in buffer
-    // {   
-    //     printf("TCP CONTAINS HTTP\n");
-    //     printHTTP(buffer,size,logfile);
-    //     return;
-    // }
 
     if(filteredPort!=-1)
     {
@@ -260,7 +220,11 @@ void printTCP(unsigned char* buffer, int size,FILE* logfile,int filteredPort)
         }
     }
 
-    isDNS(buffer,size,1);
+    if(isDNS(buffer,size,1))
+    {
+        printDNS(buffer,size,1,logfile);
+        return 1;
+    }
 
     fprintf(logfile,"TCP RECEIVED\n");
 
@@ -300,7 +264,11 @@ void printUDP(unsigned char* buffer, int size, FILE* logfile,int filteredPort)
         }
     }
 
-    isDNS(buffer,size,0);
+    if(isDNS(buffer,size,0))
+    {
+        printDNS(buffer,size,0,logfile);
+        return 1;
+    }
 
     fprintf(logfile,"UDP RECEIVED\n");
 
@@ -429,6 +397,88 @@ void printARP(unsigned char* buffer, int size, FILE* logfile)
 
 }
 
+void printDNS(unsigned char* buffer, int size,int type, FILE* logfile)
+{
+    unsigned short iphdrlen;
+    struct iphdr* iph=(struct iphdr*) buffer+sizeof(struct ethhdr);
+    iphdrlen=iph->ihl*4;
+
+    struct dnshdr* dnsh;
+
+    if(type==1)
+    {
+        struct tcphdr* tcph=(struct tcphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
+        unsigned short tcphdrlen;
+        tcphdrlen=tcph->doff*4;
+        dnsh=(struct dnshdr*)(buffer+sizeof(struct ethhdr)+iphdrlen+tcphdrlen);
+    }
+    else
+    {
+        struct udphdr* udph=(struct udphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
+        unsigned short udphdrlen=udph->len;
+        dnsh=(struct dnshdr*)(buffer+sizeof(struct ethhdr)+iphdrlen+8);
+    }
+
+    printf("DNS Identifiend\n");
+    fprintf(logfile,"DNS RECEIVED\n");
+    printIPs(buffer,size,logfile);
+
+    if(dnsh->queryOrResponse==0) fprintf(logfile,"DNS Message Type: Query\n");
+    else fprintf(logfile,"DNS Message Type: Reply\n");
+
+    fprintf(logfile,"DNS FLAGS: ");
+
+    if(dnsh->authoritativeAnswer) fprintf(logfile,"AA ");
+    if(dnsh->truncation) fprintf(logfile,"TC ");
+    if(dnsh->recursionDesired) fprintf(logfile,"RD ");
+    if(dnsh->recursionAvailable) fprintf(logfile,"RA ");
+    fprintf(logfile,"\n");
+
+    fprintf(logfile,"Question Count: %d\n",htons(dnsh->numberOfQuestions));
+    fprintf(logfile,"Answer Count: %d\n",htons(dnsh->numberOfAnswers));
+    fprintf(logfile,"Additional Records Count: %d\n",htons(dnsh->numberOfAdditional));
+
+    if(dnsh->queryOrResponse==0)
+    {
+        char* dnsQuery;
+        int len;
+
+        if(type==1)
+        {
+            struct tcphdr* tcph=(struct tcphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
+            unsigned short tcphdrlen;
+            tcphdrlen=tcph->doff*4;
+            
+            dnsQuery=(char*)(buffer+sizeof(struct ethhdr)+iphdrlen+tcphdrlen+12);
+            len=size-(sizeof(struct ethhdr)+iphdrlen+tcphdrlen+12);
+        }
+        else
+        {
+            struct udphdr* udph=(struct udphdr*)(buffer+iphdrlen+sizeof(struct ethhdr));
+            unsigned short udphdrlen=udph->len;
+
+            dnsQuery=(char*)(buffer+sizeof(struct ethhdr)+iphdrlen+8+12);
+            len=size-(sizeof(struct ethhdr)+iphdrlen+8+12);
+        }
+
+        if(len<=0)
+        {
+            printf("lungime mai mica de 0 %d\n",len);
+        }
+        else
+        {
+             fprintf(logfile,"Potential DNS Queries Dump:\n");
+
+            DumpHex(dnsQuery,len,logfile);
+        }
+
+    }
+
+    DumpHex(buffer,size,logfile);
+    fprintf(logfile,"--------------------------------------------------------------------------------------------\n");
+ 
+}
+
 void monitorICMP(unsigned char* buffer, int size, FILE* logfile)
 {   
     static ip_replies repls[50];
@@ -500,7 +550,7 @@ int main(int argc, char* argv[])
             {   
             printf("Filtering traffic by ip\n");
             char str[INET_ADDRSTRLEN];
-            //inet_aton(argv[3],&(ip_filter.s_addr));
+            inet_aton(argv[3],&(ip_filter.s_addr));
             }
             else if (strcmp(argv[2],"port")==0)
             {
@@ -508,8 +558,24 @@ int main(int argc, char* argv[])
                 port_filter=atoi(argv[3]);
                 printf(" %d\n",port_filter);
             }
+            else 
+            {
+                printf("Invalid argument. Use --help to view arguments \n");
+                exit(0);
+            }
         }
-        else printf("Invalid argument\n");
+        else if (strcmp(argv[1],"--help")==0)
+        {
+            printf("1. Pentru a monitoriza traficul de icmp foloseste \"sudo ./main --monitor\" \n");
+            printf("2. Pentru a filtra in functie de ip foloseste \"sudo ./main --filter ip [ip] \" \n");
+            printf("2. Pentru a filtra in functie de ip foloseste \"sudo ./main --filter port [port] \" \n");
+            exit(0);
+        }
+        else 
+        {
+            printf("Invalid argument. Use --help to view arguments \n");
+            exit(0);
+        }
     }
     else printf("Traffic sniffer starting\n");
 
