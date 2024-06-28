@@ -21,7 +21,7 @@ void DumpHex(const void* data, size_t size, FILE* logfile) {
 
     fprintf(logfile,"DATA DUMP\n");
 
-	char ascii[17];
+	char ascii[17]; 
 	size_t i, j;
 	ascii[16] = '\0';
 	for (i = 0; i < size; ++i) {
@@ -110,7 +110,7 @@ void processPacket(unsigned char* buffer, int size,FILE* logfile)
         return;
     }
 
-    //if(htons(eth->h_proto)!=0x800) return;
+    if(htons(eth->h_proto)!=0x800) return;
 
     struct iphdr *iph=(struct iphdr*) (buffer+sizeof(struct ethhdr));
     switch(iph->protocol)
@@ -140,6 +140,19 @@ void processPacket(unsigned char* buffer, int size,FILE* logfile)
 void processFilteredPacketIP(unsigned char* buffer,int size, FILE* logfile,struct in_addr address) 
 {   
     struct ethhdr* eth=(struct ethhdr*)(buffer);
+
+    if(htons(eth->h_proto)==0x806)
+    {   
+         struct iphdr *iph=(struct iphdr*) (buffer+sizeof(struct ethhdr));
+
+        if(iph->saddr==address.s_addr || iph->daddr==address.s_addr )
+        {
+            printARP(buffer,size,logfile);
+        }
+        return;
+    }
+
+
     if(htons(eth->h_proto)!=0x800) return;
 
     struct iphdr *iph=(struct iphdr*) (buffer+sizeof(struct ethhdr));
